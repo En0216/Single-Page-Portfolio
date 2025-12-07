@@ -176,13 +176,20 @@
 
 	<footer class="site-footer">
 		<div class="container">
+			<button id="printBtn" class="print-btn" title="列印或另存為 PDF">🖨️ 列印簡歷</button>
 			<p>© <span id="year"></span> 江佳恩 — Built with ❤️</p>
 		</div>
 	</footer>
 
 	<script src="script.js"></script>
+	<script>
+		// Print button functionality
+		document.getElementById('printBtn').addEventListener('click', function() {
+			window.print();
+		});
+		
+		// Set current year in footer
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
 </body>
 </html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>
-	document.getElementById('year').textContent = new Date().getFullYear();
