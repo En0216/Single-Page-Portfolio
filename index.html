@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>個人簡歷 — Your Name</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<div class="brand">
+				<img src="assets/profile.svg" alt="profile" class="avatar">
+				<div>
+					<h1>Your Name</h1>
+					<p class="muted">前端工程師 / UI 設計師</p>
+				</div>
+			</div>
+			<nav class="nav">
+				<a href="#about">關於</a>
+				<a href="#skills">技能</a>
+				<a href="#experience">經歷</a>
+				<a href="#portfolio">作品</a>
+				<a href="#contact">聯絡</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section id="about" class="section container">
+			<h2>關於我</h2>
+			<p>嗨，我是 Your Name，一位專注於建立快速、可存取且具視覺美感的網站與應用程式的前端工程師。熱愛學習新技術與將設計思維融入產品開發。</p>
+			<ul>
+				<li>地點：Taiwan</li>
+				<li>電子郵件：<a href="mailto:you@example.com">you@example.com</a></li>
+				<li>LinkedIn / GitHub：在此連結</li>
+			</ul>
+		</section>
+
+		<section id="skills" class="section container">
+			<h2>技能</h2>
+			<div class="skills-grid">
+				<div class="skill">
+					<h3>前端</h3>
+					<p>HTML, CSS, JavaScript, React, Vue</p>
+				</div>
+				<div class="skill">
+					<h3>工具</h3>
+					<p>Git, Webpack, Vite, Figma</p>
+				</div>
+				<div class="skill">
+					<h3>其他</h3>
+					<p>TypeScript, REST API, 測試、CI/CD</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="experience" class="section container">
+			<h2>經歷</h2>
+			<div class="timeline">
+				<div class="item">
+					<h3>前端工程師 — Company A</h3>
+					<span class="muted">2022 - 現在</span>
+					<p>負責公司產品前端開發，改善效能並導入元件化架構。</p>
+				</div>
+				<div class="item">
+					<h3>UI 設計師 — Company B</h3>
+					<span class="muted">2020 - 2022</span>
+					<p>設計與實作高可用性的介面，與工程團隊協作完成多個產品上線。</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="portfolio" class="section container">
+			<h2>作品集</h2>
+			<div class="projects">
+				<article class="project">
+					<div class="thumb">PNG</div>
+					<h4>作品名稱 A</h4>
+					<p>簡短描述 — 技術：React, Vite</p>
+				</article>
+				<article class="project">
+					<div class="thumb">PNG</div>
+					<h4>作品名稱 B</h4>
+					<p>簡短描述 — 技術：Vue, Firebase</p>
+				</article>
+			</div>
+		</section>
+
+		<section id="contact" class="section container">
+			<h2>聯絡我</h2>
+			<p>有專案想合作或工作機會，歡迎聯絡我。</p>
+			<form id="contactForm" class="contact-form">
+				<label>姓名<input type="text" name="name" required></label>
+				<label>電子郵件<input type="email" name="email" required></label>
+				<label>訊息<textarea name="message" rows="5" required></textarea></label>
+				<button type="submit">送出</button>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© <span id="year"></span> Your Name — Built with ❤️</p>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
