@@ -30,12 +30,20 @@
 	<main>
 		<section id="about" class="section container">
 			<h2>關於我</h2>
-			<p>嗨，我是 江佳恩，一位專注於建立快速、可存取且具視覺美感的網站與應用程式的前端工程師。熱愛學習新技術與將設計思維融入產品開發。</p>
-			<ul>
-				<li>地點：Taiwan</li>
-				<li>電子郵件：<a href="mailto:414570291@m365.fju.edu.tw">414570291@m365.fju.edu.tw</a></li>
-				<li>IG：<a href="https://www.instagram.com/chia_en0216" target="_blank">chia_en0216</a></li>
-			</ul>
+			<!-- About card: quick facts / contact -->
+			<div class="about-card">
+				<img src="assets/profile.svg" alt="avatar" class="about-avatar">
+				<div class="about-content">
+					<h3>快速資訊</h3>
+					<ul>
+						<li><strong>姓名：</strong>江佳恩</li>
+						<li><strong>生日：</strong>2007年2月16日</li>
+						<li><strong>學校：</strong>輔仁大學 醫資學程 一年級</li>
+						<li><strong>電子郵件：</strong><a href="mailto:414570291@m365.fju.edu.tw">414570291@m365.fju.edu.tw</a></li>
+						<li><strong>IG：</strong><a href="https://www.instagram.com/chia_en0216" target="_blank">@chia_en0216</a></li>
+					</ul>
+				</div>
+			</div>
 		</section>
 
 		<section id="skills" class="section container">
@@ -138,19 +146,16 @@
 			<h2>作品集</h2>
 			<div class="projects">
 				<article class="project">
-					<div class="thumb">PDF</div>
 					<h4>英文論文:Hospital Emergency Codes</h4>
 					<p>簡短描述 — 醫院緊急代碼用於快速通知醫護人員處理危急事件，如火災（Code Red）、生命危急醫療（Code Blue）、嬰兒失蹤（Code Pink）等。不同國家代碼略有差異。Code Blue 尤其重要，需立即醫療干預。清晰代碼與訓練可提升應變效率與病人安全。</p>
 					<p><a href="assets/portfolio/英文論文 (1).pdf.pdf" target="_blank" download>英文論文</a></p>
 				</article>
 				<article class="project">
-					<div class="thumb">PDF</div>
 					<h4>小論文:探討醫療大數據的挑戰與未來發展 </h4>
 					<p>簡短描述 — 本文探討醫療大數據的挑戰與發展，指出隱私安全、資料互通與透明度是主要問題。醫療 AI 在診斷與個人化治療上具優勢，未來趨勢包括遠距醫療、居家照護與可穿戴裝置。建議強化法規、監管與民眾教育，兼顧技術創新與個資保護。</p>
 					<p><a href="assets/portfolio/310_08_江佳恩.pdf" target="_blank" download>小論文</a></p>
 				</article>
 				<article class="project">
-					<div class="thumb">PDF</div>
 					<h4>自主學習:原子習慣：細微改變帶來巨大成就的實證法則閱讀心得 </h4>
 					<p>簡短描述 — 《原子習慣》透過微小改變累積大成果，提出「提示、渴望、行動、獎賞」四個習慣養成階段，以及「身份認同」的重要性。讀者從中學會每天持續進步1%、建立良好習慣，並將目標與自我認知連結，逐步改變生活方式與行為模式，實現長期成長。</p>
 					<p><a href="assets/portfolio/自主學習.pdf" target="_blank" download>自主學習</a></p>
@@ -160,7 +165,6 @@
 
 		<section id="contact" class="section container">
 			<h2>聯絡我</h2>
-			<p>有專案想合作或工作機會，歡迎聯絡我。</p>
 			<form id="contactForm" class="contact-form">
 				<label>姓名<input type="text" name="name" required></label>
 				<label>電子郵件<input type="email" name="email" required></label>
