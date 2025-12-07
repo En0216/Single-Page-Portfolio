@@ -22,6 +22,15 @@ body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradie
 .section h2{margin-top:0}
 .skills-grid{display:flex;gap:16px;flex-wrap:wrap}
 .skill{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:16px;border-radius:8px;flex:1;min-width:220px}
+
+/* Skill progress bars */
+.skill-list{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+.skill-row{display:flex;align-items:center;gap:12px}
+.skill-label{width:110px;font-size:0.95rem;color:var(--muted)}
+.skill-bar{flex:1;height:12px;background:rgba(255,255,255,0.04);border-radius:8px;overflow:hidden;position:relative;border:1px solid rgba(255,255,255,0.02)}
+.skill-fill{height:100%;background:linear-gradient(90deg,var(--accent),#10b981);border-radius:8px 0 0 8px;transition:width 800ms ease}
+.skill-bar[aria-valuenow="100"] .skill-fill{border-radius:8px}
+.skill-row .skill-percent{width:44px;text-align:right;font-size:0.85rem;color:var(--muted)}
 .timeline .item{background:var(--card);padding:16px;border-radius:8px;margin-bottom:12px}
 .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
 .project{background:var(--card);padding:12px;border-radius:8px}
